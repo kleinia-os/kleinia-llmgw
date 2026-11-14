@@ -1,0 +1,138 @@
+event: response.created
+data: {"response":{"id":"resp_f677f5dd3fb94e07932f167b8fa72f5e","object":"response","created_at":1793173221,"status":"in_progress","error":null,"incomplete_details":null,"instructions":null,"metadata":{},"model":"test-model","output":[],"parallel_tool_calls":true,"temperature":0,"tool_choice":"auto","tools":[],"top_p":null,"max_output_tokens":128,"usage":null},"type":"response.created","sequence_number":0}
+
+event: response.in_progress
+data: {"response":{"id":"resp_f677f5dd3fb94e07932f167b8fa72f5e","object":"response","created_at":1793173221,"status":"in_progress","error":null,"incomplete_details":null,"instructions":null,"metadata":{},"model":"test-model","output":[],"parallel_tool_calls":true,"temperature":0,"tool_choice":"auto","tools":[],"top_p":null,"max_output_tokens":128,"usage":null},"type":"response.in_progress","sequence_number":1}
+
+event: response.output_item.added
+data: {"output_index":0,"item":{"id":"rs_5c5967ca89cb44d5a452ddd3ea0c08b7","type":"reasoning","summary":[]},"type":"response.output_item.added","sequence_number":2}
+
+event: response.reasoning_summary_part.added
+data: {"item_id":"rs_5c5967ca89cb44d5a452ddd3ea0c08b7","output_index":0,"summary_index":0,"part":{"type":"summary_text","text":""},"type":"response.reasoning_summary_part.added","sequence_number":3}
+
+event: response.reasoning_summary_text.delta
+data: {"item_id":"rs_5c5967ca89cb44d5a452ddd3ea0c08b7","output_index":0,"summary_index":0,"delta":"我们需要","type":"response.reasoning_summary_text.delta","sequence_number":4}
+
+event: response.reasoning_summary_text.delta
+data: {"item_id":"rs_5c5967ca89cb44d5a452ddd3ea0c08b7","output_index":0,"summary_index":0,"delta":"回答中文。用户要求“","type":"response.reasoning_summary_text.delta","sequence_number":5}
+
+event: response.reasoning_summary_text.delta
+data: {"item_id":"rs_5c5967ca89cb44d5a452ddd3ea0c08b7","output_index":0,"summary_index":0,"delta":"用一句话介绍你自己","type":"response.reasoning_summary_text.delta","sequence_number":6}
+
+event: response.reasoning_summary_text.delta
+data: {"item_id":"rs_5c5967ca89cb44d5a452ddd3ea0c08b7","output_index":0,"summary_index":0,"delta":"”。需要一句话","type":"response.reasoning_summary_text.delta","sequence_number":7}
+
+event: response.reasoning_summary_text.delta
+data: {"item_id":"rs_5c5967ca89cb44d5a452ddd3ea0c08b7","output_index":0,"summary_index":0,"delta":"。简洁。作为","type":"response.reasoning_summary_text.delta","sequence_number":8}
+
+event: response.reasoning_summary_text.delta
+data: {"item_id":"rs_5c5967ca89cb44d5a452ddd3ea0c08b7","output_index":0,"summary_index":0,"delta":"ChatGPT?","type":"response.reasoning_summary_text.delta","sequence_number":9}
+
+event: response.reasoning_summary_text.delta
+data: {"item_id":"rs_5c5967ca89cb44d5a452ddd3ea0c08b7","output_index":0,"summary_index":0,"delta":" 应该","type":"response.reasoning_summary_text.delta","sequence_number":10}
+
+event: response.reasoning_summary_text.delta
+data: {"item_id":"rs_5c5967ca89cb44d5a452ddd3ea0c08b7","output_index":0,"summary_index":0,"delta":"说明自己是","type":"response.reasoning_summary_text.delta","sequence_number":11}
+
+event: response.reasoning_summary_text.delta
+data: {"item_id":"rs_5c5967ca89cb44d5a452ddd3ea0c08b7","output_index":0,"summary_index":0,"delta":"AI助手。","type":"response.reasoning_summary_text.delta","sequence_number":12}
+
+event: response.reasoning_summary_text.delta
+data: {"item_id":"rs_5c5967ca89cb44d5a452ddd3ea0c08b7","output_index":0,"summary_index":0,"delta":"一句话。不要","type":"response.reasoning_summary_text.delta","sequence_number":13}
+
+event: response.reasoning_summary_text.delta
+data: {"item_id":"rs_5c5967ca89cb44d5a452ddd3ea0c08b7","output_index":0,"summary_index":0,"delta":"多余。可以用","type":"response.reasoning_summary_text.delta","sequence_number":14}
+
+event: response.reasoning_summary_text.delta
+data: {"item_id":"rs_5c5967ca89cb44d5a452ddd3ea0c08b7","output_index":0,"summary_index":0,"delta":"：“","type":"response.reasoning_summary_text.delta","sequence_number":15}
+
+event: response.reasoning_summary_text.delta
+data: {"item_id":"rs_5c5967ca89cb44d5a452ddd3ea0c08b7","output_index":0,"summary_index":0,"delta":"我是一个由","type":"response.reasoning_summary_text.delta","sequence_number":16}
+
+event: response.reasoning_summary_text.delta
+data: {"item_id":"rs_5c5967ca89cb44d5a452ddd3ea0c08b7","output_index":0,"summary_index":0,"delta":"Open","type":"response.reasoning_summary_text.delta","sequence_number":17}
+
+event: response.reasoning_summary_text.delta
+data: {"item_id":"rs_5c5967ca89cb44d5a452ddd3ea0c08b7","output_index":0,"summary_index":0,"delta":"AI训练的","type":"response.reasoning_summary_text.delta","sequence_number":18}
+
+event: response.reasoning_summary_text.delta
+data: {"item_id":"rs_5c5967ca89cb44d5a452ddd3ea0c08b7","output_index":0,"summary_index":0,"delta":"AI助手，可以","type":"response.reasoning_summary_text.delta","sequence_number":19}
+
+event: response.reasoning_summary_text.delta
+data: {"item_id":"rs_5c5967ca89cb44d5a452ddd3ea0c08b7","output_index":0,"summary_index":0,"delta":"帮你回答问题","type":"response.reasoning_summary_text.delta","sequence_number":20}
+
+event: response.reasoning_summary_text.delta
+data: {"item_id":"rs_5c5967ca89cb44d5a452ddd3ea0c08b7","output_index":0,"summary_index":0,"delta":"、提供建议","type":"response.reasoning_summary_text.delta","sequence_number":21}
+
+event: response.reasoning_summary_text.delta
+data: {"item_id":"rs_5c5967ca89cb44d5a452ddd3ea0c08b7","output_index":0,"summary_index":0,"delta":"和完成任务","type":"response.reasoning_summary_text.delta","sequence_number":22}
+
+event: response.reasoning_summary_text.delta
+data: {"item_id":"rs_5c5967ca89cb44d5a452ddd3ea0c08b7","output_index":0,"summary_index":0,"delta":"。” 这是一","type":"response.reasoning_summary_text.delta","sequence_number":23}
+
+event: response.reasoning_summary_text.delta
+data: {"item_id":"rs_5c5967ca89cb44d5a452ddd3ea0c08b7","output_index":0,"summary_index":0,"delta":"句话。注意","type":"response.reasoning_summary_text.delta","sequence_number":24}
+
+event: response.reasoning_summary_text.delta
+data: {"item_id":"rs_5c5967ca89cb44d5a452ddd3ea0c08b7","output_index":0,"summary_index":0,"delta":"不要","type":"response.reasoning_summary_text.delta","sequence_number":25}
+
+event: response.reasoning_summary_text.delta
+data: {"item_id":"rs_5c5967ca89cb44d5a452ddd3ea0c08b7","output_index":0,"summary_index":0,"delta":"用“","type":"response.reasoning_summary_text.delta","sequence_number":26}
+
+event: response.reasoning_summary_text.delta
+data: {"item_id":"rs_5c5967ca89cb44d5a452ddd3ea0c08b7","output_index":0,"summary_index":0,"delta":"我是TestBo","type":"response.reasoning_summary_text.delta","sequence_number":27}
+
+event: response.reasoning_summary_text.delta
+data: {"item_id":"rs_5c5967ca89cb44d5a452ddd3ea0c08b7","output_index":0,"summary_index":0,"delta":"t”等。最终只","type":"response.reasoning_summary_text.delta","sequence_number":28}
+
+event: response.reasoning_summary_text.delta
+data: {"item_id":"rs_5c5967ca89cb44d5a452ddd3ea0c08b7","output_index":0,"summary_index":0,"delta":"一句话","type":"response.reasoning_summary_text.delta","sequence_number":29}
+
+event: response.reasoning_summary_text.delta
+data: {"item_id":"rs_5c5967ca89cb44d5a452ddd3ea0c08b7","output_index":0,"summary_index":0,"delta":"。","type":"response.reasoning_summary_text.delta","sequence_number":30}
+
+event: response.output_item.added
+data: {"output_index":1,"item":{"id":"msg_7393ff8af6804a7ca89087e4cb791125","type":"message","role":"assistant","status":"in_progress","content":[]},"type":"response.output_item.added","sequence_number":31}
+
+event: response.content_part.added
+data: {"item_id":"msg_7393ff8af6804a7ca89087e4cb791125","output_index":1,"content_index":0,"part":{"type":"output_text","text":"","annotations":[],"logprobs":[]},"type":"response.content_part.added","sequence_number":32}
+
+event: response.output_text.delta
+data: {"item_id":"msg_7393ff8af6804a7ca89087e4cb791125","output_index":1,"content_index":0,"delta":"我是一个","logprobs":[],"type":"response.output_text.delta","sequence_number":33}
+
+event: response.output_text.delta
+data: {"item_id":"msg_7393ff8af6804a7ca89087e4cb791125","output_index":1,"content_index":0,"delta":"由OpenAI训练的AI助手","logprobs":[],"type":"response.output_text.delta","sequence_number":34}
+
+event: response.output_text.delta
+data: {"item_id":"msg_7393ff8af6804a7ca89087e4cb791125","output_index":1,"content_index":0,"delta":"，可以帮你回答问题、提供","logprobs":[],"type":"response.output_text.delta","sequence_number":35}
+
+event: response.output_text.delta
+data: {"item_id":"msg_7393ff8af6804a7ca89087e4cb791125","output_index":1,"content_index":0,"delta":"建议并","logprobs":[],"type":"response.output_text.delta","sequence_number":36}
+
+event: response.output_text.delta
+data: {"item_id":"msg_7393ff8af6804a7ca89087e4cb791125","output_index":1,"content_index":0,"delta":"协助","logprobs":[],"type":"response.output_text.delta","sequence_number":37}
+
+event: response.output_text.delta
+data: {"item_id":"msg_7393ff8af6804a7ca89087e4cb791125","output_index":1,"content_index":0,"delta":"完成任务。","logprobs":[],"type":"response.output_text.delta","sequence_number":38}
+
+event: response.reasoning_summary_text.done
+data: {"item_id":"rs_5c5967ca89cb44d5a452ddd3ea0c08b7","output_index":0,"summary_index":0,"text":"我们需要回答中文。用户要求“用一句话介绍你自己”。需要一句话。简洁。作为ChatGPT? 应该说明自己是AI助手。一句话。不要多余。可以用：“我是一个由OpenAI训练的AI助手，可以帮你回答问题、提供建议和完成任务。” 这是一句话。注意不要用“我是TestBot”等。最终只一句话。","type":"response.reasoning_summary_text.done","sequence_number":39}
+
+event: response.reasoning_summary_part.done
+data: {"item_id":"rs_5c5967ca89cb44d5a452ddd3ea0c08b7","output_index":0,"summary_index":0,"part":{"type":"summary_text","text":"我们需要回答中文。用户要求“用一句话介绍你自己”。需要一句话。简洁。作为ChatGPT? 应该说明自己是AI助手。一句话。不要多余。可以用：“我是一个由OpenAI训练的AI助手，可以帮你回答问题、提供建议和完成任务。” 这是一句话。注意不要用“我是TestBot”等。最终只一句话。"},"type":"response.reasoning_summary_part.done","sequence_number":40}
+
+event: response.output_item.done
+data: {"output_index":0,"item":{"id":"rs_5c5967ca89cb44d5a452ddd3ea0c08b7","type":"reasoning","summary":[{"type":"summary_text","text":"我们需要回答中文。用户要求“用一句话介绍你自己”。需要一句话。简洁。作为ChatGPT? 应该说明自己是AI助手。一句话。不要多余。可以用：“我是一个由OpenAI训练的AI助手，可以帮你回答问题、提供建议和完成任务。” 这是一句话。注意不要用“我是TestBot”等。最终只一句话。"}]},"type":"response.output_item.done","sequence_number":41}
+
+event: response.output_text.done
+data: {"item_id":"msg_7393ff8af6804a7ca89087e4cb791125","output_index":1,"content_index":0,"text":"我是一个由OpenAI训练的AI助手，可以帮你回答问题、提供建议并协助完成任务。","logprobs":[],"type":"response.output_text.done","sequence_number":42}
+
+event: response.content_part.done
+data: {"item_id":"msg_7393ff8af6804a7ca89087e4cb791125","output_index":1,"content_index":0,"part":{"type":"output_text","text":"我是一个由OpenAI训练的AI助手，可以帮你回答问题、提供建议并协助完成任务。","annotations":[],"logprobs":[]},"type":"response.content_part.done","sequence_number":43}
+
+event: response.output_item.done
+data: {"output_index":1,"item":{"id":"msg_7393ff8af6804a7ca89087e4cb791125","type":"message","role":"assistant","status":"completed","content":[{"type":"output_text","text":"我是一个由OpenAI训练的AI助手，可以帮你回答问题、提供建议并协助完成任务。","annotations":[],"logprobs":[]}]},"type":"response.output_item.done","sequence_number":44}
+
+event: response.completed
+data: {"response":{"id":"resp_f677f5dd3fb94e07932f167b8fa72f5e","object":"response","created_at":1793173221,"status":"completed","error":null,"incomplete_details":null,"instructions":null,"metadata":{},"model":"test-model","output":[{"id":"rs_5c5967ca89cb44d5a452ddd3ea0c08b7","type":"reasoning","summary":[{"type":"summary_text","text":"我们需要回答中文。用户要求“用一句话介绍你自己”。需要一句话。简洁。作为ChatGPT? 应该说明自己是AI助手。一句话。不要多余。可以用：“我是一个由OpenAI训练的AI助手，可以帮你回答问题、提供建议和完成任务。” 这是一句话。注意不要用“我是TestBot”等。最终只一句话。"}]},{"id":"msg_7393ff8af6804a7ca89087e4cb791125","type":"message","role":"assistant","status":"completed","content":[{"type":"output_text","text":"我是一个由OpenAI训练的AI助手，可以帮你回答问题、提供建议并协助完成任务。","annotations":[],"logprobs":[]}]}],"parallel_tool_calls":true,"temperature":0,"tool_choice":"auto","tools":[],"top_p":null,"max_output_tokens":128,"usage":{"input_tokens":34,"input_tokens_details":{"cached_tokens":0},"output_tokens":90,"output_tokens_details":{"reasoning_tokens":71},"total_tokens":124,"cost":0,"opencode":{"billing_source":"go","list_cost":0.0001182,"allowance":0.00008865,"tokens":{"input":34,"output":90,"reasoning":71,"cache_read":0,"cache_write_5m":0,"cache_write_1h":0}}}},"type":"response.completed","sequence_number":45}
+

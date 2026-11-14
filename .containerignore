@@ -1,0 +1,11 @@
+# Keep host build artifacts and local runtime state out of the OCI build
+# context: the image rebuilds everything from source inside the builder
+# stage (just package), and stale RPMs would otherwise be swept up by
+# `COPY --from=builder /src/build-out/*.rpm`.
+build-out/
+bin/
+var/
+.git/
+__pycache__/
+*.pyc
+*.key

@@ -1,0 +1,3 @@
+#!/bin/sh
+# kleinia-modelgateway — GTK4/libadwaita 管理界面入口（RPM 安装路径）
+exec python3 /usr/lib/kleinia/llmgw/gui/src/main.py "$@"

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  io.kleinia.ModelGateway-symbolic.svg
+  原创自绘 symbolic 图标（Kleinia 模型网关）：字母 g 造型——
+  圆环 + 内钩 + 底部出线（网关：请求进、token 出）。单色 #bebebe。
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <!-- g 的圆环（上方开口留给钩笔） -->
+  <path d="M12.4 6.6A4.6 4.6 0 1 0 8.6 12.1" fill="none" stroke="#bebebe"
+        stroke-width="1.7" stroke-linecap="round"/>
+  <!-- g 的内钩 -->
+  <path d="M12.4 6.6V10.2A2.1 2.1 0 0 1 10.3 12.3H8.6" fill="none"
+        stroke="#bebebe" stroke-width="1.7" stroke-linecap="round"/>
+  <!-- g 的尾部出线（网关下行） -->
+  <path d="M8.6 12.1V14.6" fill="none" stroke="#bebebe" stroke-width="1.7"
+        stroke-linecap="round"/>
+</svg>

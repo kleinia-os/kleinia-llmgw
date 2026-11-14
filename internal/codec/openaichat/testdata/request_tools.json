@@ -1,0 +1,24 @@
+{
+  "model": "ds-flash",
+  "messages": [
+    {"role": "system", "content": "你是天气助手"},
+    {"role": "user", "content": "北京天气如何？"},
+    {"role": "assistant", "content": "", "reasoning_content": "We need to call the weather tool for Beijing.",
+     "tool_calls": [{"id": "call_00_94091ex7gxe95toioqwsoltl", "type": "function",
+       "function": {"name": "get_weather", "arguments": "{\"city\": \"北京\"}"}}]},
+    {"role": "tool", "tool_call_id": "call_00_94091ex7gxe95toioqwsoltl", "content": "{\"temp_c\": 18}"}
+  ],
+  "tools": [{"type": "function", "function": {
+    "name": "get_weather",
+    "description": "query current weather",
+    "parameters": {"type": "object", "properties": {"city": {"type": "string"}}, "required": ["city"]}
+  }}],
+  "tool_choice": {"type": "tool", "function": {"name": "get_weather"}},
+  "temperature": 0.2,
+  "top_p": 0.9,
+  "top_k": 50,
+  "max_tokens": 512,
+  "response_format": {"type": "json_object"},
+  "frequency_penalty": 0.5,
+  "user": "klein"
+}

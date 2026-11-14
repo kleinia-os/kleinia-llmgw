@@ -1,0 +1,68 @@
+data: {"id":"0217931731191438792bd17575462d883d5a21b523815c541bdf0","object":"chat.completion.chunk","created":1793173120,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"","reasoning_content":""}}],"usage":null}
+
+data: {"id":"0217931731191438792bd17575462d883d5a21b523815c541bdf0","object":"chat.completion.chunk","created":1793173120,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"","reasoning_content":"我们需要"}}],"usage":null}
+
+data: {"id":"0217931731191438792bd17575462d883d5a21b523815c541bdf0","object":"chat.completion.chunk","created":1793173120,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"","reasoning_content":"回答中文，"}}],"usage":null}
+
+data: {"id":"0217931731191438792bd17575462d883d5a21b523815c541bdf0","object":"chat.completion.chunk","created":1793173120,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"","reasoning_content":"一句话介绍"}}],"usage":null}
+
+data: {"id":"0217931731191438792bd17575462d883d5a21b523815c541bdf0","object":"chat.completion.chunk","created":1793173120,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"","reasoning_content":"自己。作为"}}],"usage":null}
+
+data: {"id":"0217931731191438792bd17575462d883d5a21b523815c541bdf0","object":"chat.completion.chunk","created":1793173120,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"","reasoning_content":"AI"}}],"usage":null}
+
+data: {"id":"0217931731191438792bd17575462d883d5a21b523815c541bdf0","object":"chat.completion.chunk","created":1793173120,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"","reasoning_content":"助手。"}}],"usage":null}
+
+data: {"id":"0217931731191438792bd17575462d883d5a21b523815c541bdf0","object":"chat.completion.chunk","created":1793173120,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"","reasoning_content":"简洁"}}],"usage":null}
+
+data: {"id":"0217931731191438792bd17575462d883d5a21b523815c541bdf0","object":"chat.completion.chunk","created":1793173120,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"","reasoning_content":"。需要符合"}}],"usage":null}
+
+data: {"id":"0217931731191438792bd17575462d883d5a21b523815c541bdf0","object":"chat.completion.chunk","created":1793173120,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"","reasoning_content":"“一句话”。"}}],"usage":null}
+
+data: {"id":"0217931731191438792bd17575462d883d5a21b523815c541bdf0","object":"chat.completion.chunk","created":1793173120,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"","reasoning_content":"可以"}}],"usage":null}
+
+data: {"id":"0217931731191438792bd17575462d883d5a21b523815c541bdf0","object":"chat.completion.chunk","created":1793173120,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"","reasoning_content":"："}}],"usage":null}
+
+data: {"id":"0217931731191438792bd17575462d883d5a21b523815c541bdf0","object":"chat.completion.chunk","created":1793173120,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"","reasoning_content":"我是由"}}],"usage":null}
+
+data: {"id":"0217931731191438792bd17575462d883d5a21b523815c541bdf0","object":"chat.completion.chunk","created":1793173120,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"","reasoning_content":"Test"}}],"usage":null}
+
+data: {"id":"0217931731191438792bd17575462d883d5a21b523815c541bdf0","object":"chat.completion.chunk","created":1793173120,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"","reasoning_content":"Bot公司"}}],"usage":null}
+
+data: {"id":"0217931731191438792bd17575462d883d5a21b523815c541bdf0","object":"chat.completion.chunk","created":1793173120,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"","reasoning_content":"开发的"}}],"usage":null}
+
+data: {"id":"0217931731191438792bd17575462d883d5a21b523815c541bdf0","object":"chat.completion.chunk","created":1793173120,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"","reasoning_content":"AI助手，乐于"}}],"usage":null}
+
+data: {"id":"0217931731191438792bd17575462d883d5a21b523815c541bdf0","object":"chat.completion.chunk","created":1793173120,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"","reasoning_content":"为你"}}],"usage":null}
+
+data: {"id":"0217931731191438792bd17575462d883d5a21b523815c541bdf0","object":"chat.completion.chunk","created":1793173120,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"","reasoning_content":"提供信息与"}}],"usage":null}
+
+data: {"id":"0217931731191438792bd17575462d883d5a21b523815c541bdf0","object":"chat.completion.chunk","created":1793173120,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"","reasoning_content":"帮助。注意"}}],"usage":null}
+
+data: {"id":"0217931731191438792bd17575462d883d5a21b523815c541bdf0","object":"chat.completion.chunk","created":1793173120,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"","reasoning_content":"不要 reveal"}}],"usage":null}
+
+data: {"id":"0217931731191438792bd17575462d883d5a21b523815c541bdf0","object":"chat.completion.chunk","created":1793173120,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"","reasoning_content":"? 可以。用"}}],"usage":null}
+
+data: {"id":"0217931731191438792bd17575462d883d5a21b523815c541bdf0","object":"chat.completion.chunk","created":1793173120,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"","reasoning_content":"一句话。最终只"}}],"usage":null}
+
+data: {"id":"0217931731191438792bd17575462d883d5a21b523815c541bdf0","object":"chat.completion.chunk","created":1793173120,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"","reasoning_content":"给"}}],"usage":null}
+
+data: {"id":"0217931731191438792bd17575462d883d5a21b523815c541bdf0","object":"chat.completion.chunk","created":1793173120,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"","reasoning_content":"一句话"}}],"usage":null}
+
+data: {"id":"0217931731191438792bd17575462d883d5a21b523815c541bdf0","object":"chat.completion.chunk","created":1793173120,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"","reasoning_content":"。"}}],"usage":null}
+
+data: {"id":"0217931731191438792bd17575462d883d5a21b523815c541bdf0","object":"chat.completion.chunk","created":1793173120,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"我是","reasoning_content":""}}],"usage":null}
+
+data: {"id":"0217931731191438792bd17575462d883d5a21b523815c541bdf0","object":"chat.completion.chunk","created":1793173120,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"由","reasoning_content":""}}],"usage":null}
+
+data: {"id":"0217931731191438792bd17575462d883d5a21b523815c541bdf0","object":"chat.completion.chunk","created":1793173120,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"Test","reasoning_content":""}}],"usage":null}
+
+data: {"id":"0217931731191438792bd17575462d883d5a21b523815c541bdf0","object":"chat.completion.chunk","created":1793173120,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"Labs开发的AI助手","reasoning_content":""}}],"usage":null}
+
+data: {"id":"0217931731191438792bd17575462d883d5a21b523815c541bdf0","object":"chat.completion.chunk","created":1793173120,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"，乐于为你","reasoning_content":""}}],"usage":null}
+
+data: {"id":"0217931731191438792bd17575462d883d5a21b523815c541bdf0","object":"chat.completion.chunk","created":1793173120,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"提供信息与帮助","reasoning_content":""}}],"usage":null}
+
+data: {"id":"0217931731191438792bd17575462d883d5a21b523815c541bdf0","object":"chat.completion.chunk","created":1793173120,"model":"test-model","choices":[{"index":0,"finish_reason":"stop","delta":{"role":"assistant","content":"。","reasoning_content":""}}],"usage":{"prompt_tokens":34,"completion_tokens":71,"total_tokens":105,"prompt_tokens_details":{"cached_tokens":0},"completion_tokens_details":{"reasoning_tokens":53},"cost":0,"opencode":{"billing_source":"go","list_cost":0.0000954,"allowance":0.00007155,"tokens":{"input":34,"output":71,"reasoning":53,"cache_read":0,"cache_write_5m":0,"cache_write_1h":0}}}}
+
+data: [DONE]
+

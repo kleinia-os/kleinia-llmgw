@@ -1,0 +1,11 @@
+[Unit]
+Description=Kleinia model gateway socket (127.0.0.1:8484)
+
+[Socket]
+ListenStream=127.0.0.1:8484
+BindIPv6Only=default
+Accept=no
+Backlog=64
+
+[Install]
+WantedBy=sockets.target

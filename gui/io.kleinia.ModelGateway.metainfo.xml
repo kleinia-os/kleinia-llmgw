@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.kleinia.ModelGateway</id>
+  <name>Kleinia Model Gateway</name>
+  <name xml:lang="zh_CN">Kleinia 模型网关</name>
+  <summary>Manage the system-level LLM gateway</summary>
+  <summary xml:lang="zh_CN">管理系统级模型网关</summary>
+  <description>
+    <p>
+      Management UI for llmgwd, the Kleinia system model gateway: aggregated
+      upstream sources with per-alias model mapping, per-app keys with quota
+      windows, priority + weight routing, and usage accounting.
+    </p>
+    <p xml:lang="zh_CN">
+      llmgwd（Kleinia 系统级模型网关）的管理界面：多上游模型源与别名映射、
+      按应用发放的密钥与配额、优先级 + 权重的分层路由、用量记账。
+    </p>
+  </description>
+  <developer_name translatable="no">Kleinia</developer_name>
+  <project_license>LicenseRef-Proprietary</project_license>
+  <metadata_license>CC0-1.0</metadata_license>
+  <launchable type="desktop-id">io.kleinia.ModelGateway.desktop</launchable>
+  <url type="homepage">https://kleinia.io/llmgw</url>
+  <url type="bugtracker">https://kleinia.io/llmgw/issues</url>
+  <recommends>
+    <control>keyboard</control>
+    <control>pointing</control>
+    <control>touch</control>
+  </recommends>
+  <requires>
+    <display_length compare="ge">360</display_length>
+  </requires>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="0.1.0" date="2026-10-28">
+      <description>
+        <p>Initial G0 slice: six pages (overview, sources, models, keys,
+           routing, usage), mock backend with live simulated data, D-Bus
+           management-plane client (system bus or peer-to-peer address),
+           GNOME Shell search provider.</p>
+        <p xml:lang="zh_CN">首个 G0 切片：六页（概览/模型源/模型/应用与密钥/
+           路由/用量）、带模拟数据的 mock 后端、D-Bus 管理面客户端（system
+           总线或对等连接）、GNOME Shell 全局搜索 provider。</p>
+      </description>
+    </release>
+  </releases>
+</component>

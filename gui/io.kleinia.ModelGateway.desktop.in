@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Name=Kleinia Model Gateway
+Name[zh_CN]=Kleinia 模型网关
+Comment=Manage model sources, keys, routing and usage of the system LLM gateway
+Comment[zh_CN]=管理系统级模型网关的模型源、密钥、路由与用量
+Exec=kleinia-modelgateway
+Icon=io.kleinia.ModelGateway-symbolic
+Terminal=false
+Categories=System;Development;Utility;
+Keywords=llm;gateway;model;openai;anthropic;kleinia;llmgw;
+StartupNotify=true
+DBusActivatable=true
+X-Kleinia-Pages=overview;sources;models;keys;usage;logs

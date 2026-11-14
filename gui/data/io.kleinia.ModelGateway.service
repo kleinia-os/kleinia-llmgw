@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=io.kleinia.ModelGateway
+Exec=/usr/bin/kleinia-modelgateway

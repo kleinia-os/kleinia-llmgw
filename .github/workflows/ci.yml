@@ -1,0 +1,116 @@
+# CI: build/test/package + RPM-in-OCI artifact image, published to ghcr.io
+# on the free GitHub-hosted runners (fork-friendly: pushes from a fork go to
+# the fork's own ghcr namespace; without credentials they are skipped, not
+# failed — see scripts/push.sh).
+name: ci
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  packages: write   # publish the artifact image with the workflow token
+
+env:
+  KLN_REGISTRY: ${{ vars.KLN_REGISTRY || format('ghcr.io/{0}', github.repository_owner) }}
+
+jobs:
+  gitleaks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Install gitleaks
+        run: |
+          set -eu
+          curl -fsSL -o gitleaks.tgz https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_linux_x64.tar.gz
+          tar -xzf gitleaks.tgz gitleaks && sudo install -m 0755 gitleaks /usr/local/bin/gitleaks
+      - name: Secret scan
+        run: gitleaks detect --source . --redact
+
+  build-test-package:
+    # Native runner build: fast (setup-go caching) and the GUI test suite
+    # runs for real (GTK4/libadwaita typelibs + xvfb; without them the UI
+    # smoke tests silently skip).
+    # Pinned to 24.04 for stable package names; the Adw typelib package
+    # is gir1.2-adw-1 (not gir1.2-adwaita-1).
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0      # full history + tags for `git describe` versions
+      - name: Install Go
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+      - name: Install just
+        run: |
+          set -eu
+          command -v just >/dev/null || {
+            curl -fsSL -o /tmp/just.tgz \
+              https://github.com/casey/just/releases/download/1.59.0/just-1.59.0-x86_64-unknown-linux-musl.tar.gz
+            tar -xzf /tmp/just.tgz -C /tmp just
+            sudo install -m 0755 /tmp/just /usr/local/bin/just
+          }
+          just --version
+      - name: Install GUI test deps (GTK4/libadwaita typelibs + xvfb)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-gi gir1.2-glib-2.0 \
+            gir1.2-gtk-4.0 gir1.2-adw-1 libadwaita-1-0 xvfb
+      - name: just build
+        run: just build
+      - name: just test (UI suite under xvfb)
+        run: xvfb-run -a just test
+      # 注意：这里不 `just package`——Ubuntu(glibc 2.39) 编的 RPM 不作分发物，
+      # 正式 RPM 一律出自 image job 的 Fedora 44 容器构建（见下方导出步骤）。
+
+  image:
+    # RPM-in-OCI artifact image, built fully inside dist/Containerfile
+    # (the builder carries its own toolchain); the runner only drives
+    # podman, which ubuntu-latest preinstalls. Skipped on PRs — the
+    # pull-request GITHUB_TOKEN cannot push packages.
+    needs: build-test-package
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    if: github.event_name != 'pull_request'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Install just
+        run: |
+          set -eu
+          command -v just >/dev/null || {
+            curl -fsSL -o /tmp/just.tgz \
+              https://github.com/casey/just/releases/download/1.59.0/just-1.59.0-x86_64-unknown-linux-musl.tar.gz
+            tar -xzf /tmp/just.tgz -C /tmp just
+            sudo install -m 0755 /tmp/just /usr/local/bin/just
+          }
+          just --version
+      - name: Build artifact image
+        run: just artifact
+      - name: Export the Fedora-built RPM
+        run: |
+          set -eu
+          cid=$(podman create localhost/kleinia/kleinia-llmgw:rpm /none)
+          mkdir -p build-out
+          podman cp "$cid":/rpms/. build-out/
+          podman rm "$cid" >/dev/null
+          ls -la build-out/*.rpm
+      - name: Upload RPM (Fedora-built)
+        uses: actions/upload-artifact@v4
+        with:
+          name: kleinia-llmgw-rpm
+          path: build-out/*.rpm
+          if-no-files-found: error
+      - name: Push artifact image
+        env:
+          KLN_REGISTRY_USER: ${{ secrets.KLN_REGISTRY_USER }}
+          KLN_REGISTRY_PASSWORD: ${{ secrets.KLN_REGISTRY_PASSWORD }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash scripts/push.sh

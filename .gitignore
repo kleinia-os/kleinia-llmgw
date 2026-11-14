@@ -1,0 +1,36 @@
+# build artifacts
+/bin/
+/dist/bin/
+*.test
+
+# unified build interface output (just build / just package)
+build-out/
+*.rpm
+
+# transient rendered nfpm config (just package)
+.nfpm.rendered.yaml
+
+# runtime state
+/var/
+test/var/
+*.db
+*.db-wal
+*.db-shm
+
+# secrets — never commit keys
+.env
+test/live.env
+*.key
+
+# editor
+.idea/
+.vscode/
+*.swp
+
+# sysagent_llm build artifacts
+sysagent_llm/sysagent_llm
+sysagent_llm/test_fwd
+
+# Python bytecode
+__pycache__/
+*.pyc

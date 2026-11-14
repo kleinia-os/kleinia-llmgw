@@ -1,0 +1,36 @@
+data: {"id":"021793173150163ec39001cad8ae999c8f17eed1b37944e74f15b","object":"chat.completion.chunk","created":1793173151,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"","reasoning_content":""}}],"usage":null}
+
+data: {"id":"021793173150163ec39001cad8ae999c8f17eed1b37944e74f15b","object":"chat.completion.chunk","created":1793173151,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"","reasoning_content":"The"}}],"usage":null}
+
+data: {"id":"021793173150163ec39001cad8ae999c8f17eed1b37944e74f15b","object":"chat.completion.chunk","created":1793173151,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"","reasoning_content":" user asks about Beijing weather"}}],"usage":null}
+
+data: {"id":"021793173150163ec39001cad8ae999c8f17eed1b37944e74f15b","object":"chat.completion.chunk","created":1793173151,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"","reasoning_content":". I should call the"}}],"usage":null}
+
+data: {"id":"021793173150163ec39001cad8ae999c8f17eed1b37944e74f15b","object":"chat.completion.chunk","created":1793173151,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"","reasoning_content":" weather"}}],"usage":null}
+
+data: {"id":"021793173150163ec39001cad8ae999c8f17eed1b37944e74f15b","object":"chat.completion.chunk","created":1793173151,"model":"test-model","choices":[{"index":0,"delta":{"role":"assistant","content":"","reasoning_content":" tool."}}],"usage":null}
+
+data: {"id":"021793173150163ec39001cad8ae999c8f17eed1b37944e74f15b","object":"chat.completion.chunk","created":1793173151,"model":"test-model","choices":[{"index":0,"delta":{"content":"","tool_calls":[{"index":0,"id":"call_00_4zvmdx414q1czyd93kbev19p","type":"function","function":{"name":"get_weather","arguments":""}}]}}],"usage":null}
+
+data: {"id":"021793173150163ec39001cad8ae999c8f17eed1b37944e74f15b","object":"chat.completion.chunk","created":1793173151,"model":"test-model","choices":[{"index":0,"delta":{"content":"","tool_calls":[{"index":0,"function":{"arguments":"{"}}]}}],"usage":null}
+
+data: {"id":"021793173150163ec39001cad8ae999c8f17eed1b37944e74f15b","object":"chat.completion.chunk","created":1793173151,"model":"test-model","choices":[{"index":0,"delta":{"content":"","tool_calls":[{"index":0,"function":{"arguments":"\""}}]}}],"usage":null}
+
+data: {"id":"021793173150163ec39001cad8ae999c8f17eed1b37944e74f15b","object":"chat.completion.chunk","created":1793173151,"model":"test-model","choices":[{"index":0,"delta":{"content":"","tool_calls":[{"index":0,"function":{"arguments":"city"}}]}}],"usage":null}
+
+data: {"id":"021793173150163ec39001cad8ae999c8f17eed1b37944e74f15b","object":"chat.completion.chunk","created":1793173151,"model":"test-model","choices":[{"index":0,"delta":{"content":"","tool_calls":[{"index":0,"function":{"arguments":"\""}}]}}],"usage":null}
+
+data: {"id":"021793173150163ec39001cad8ae999c8f17eed1b37944e74f15b","object":"chat.completion.chunk","created":1793173151,"model":"test-model","choices":[{"index":0,"delta":{"content":"","tool_calls":[{"index":0,"function":{"arguments":": "}}]}}],"usage":null}
+
+data: {"id":"021793173150163ec39001cad8ae999c8f17eed1b37944e74f15b","object":"chat.completion.chunk","created":1793173151,"model":"test-model","choices":[{"index":0,"delta":{"content":"","tool_calls":[{"index":0,"function":{"arguments":"\""}}]}}],"usage":null}
+
+data: {"id":"021793173150163ec39001cad8ae999c8f17eed1b37944e74f15b","object":"chat.completion.chunk","created":1793173151,"model":"test-model","choices":[{"index":0,"delta":{"content":"","tool_calls":[{"index":0,"function":{"arguments":"北京"}}]}}],"usage":null}
+
+data: {"id":"021793173150163ec39001cad8ae999c8f17eed1b37944e74f15b","object":"chat.completion.chunk","created":1793173151,"model":"test-model","choices":[{"index":0,"delta":{"content":"","tool_calls":[{"index":0,"function":{"arguments":"\""}}]}}],"usage":null}
+
+data: {"id":"021793173150163ec39001cad8ae999c8f17eed1b37944e74f15b","object":"chat.completion.chunk","created":1793173151,"model":"test-model","choices":[{"index":0,"delta":{"content":"","tool_calls":[{"index":0,"function":{"arguments":"}"}}]}}],"usage":null}
+
+data: {"id":"021793173150163ec39001cad8ae999c8f17eed1b37944e74f15b","object":"chat.completion.chunk","created":1793173151,"model":"test-model","choices":[{"index":0,"finish_reason":"tool_calls","delta":{"content":"","reasoning_content":""}}],"usage":{"prompt_tokens":302,"completion_tokens":53,"total_tokens":355,"prompt_tokens_details":{"cached_tokens":256},"completion_tokens_details":{"reasoning_tokens":14},"cost":0,"opencode":{"billing_source":"go","list_cost":0.00007894,"allowance":0.0000592,"tokens":{"input":46,"output":53,"reasoning":14,"cache_read":256,"cache_write_5m":0,"cache_write_1h":0}}}}
+
+data: [DONE]
+

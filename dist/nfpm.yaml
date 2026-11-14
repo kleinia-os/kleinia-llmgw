@@ -1,0 +1,55 @@
+# RPM packaging declaration. Inputs come only from whitelisted skeleton dirs:
+# ./build-out/ (built by `just build`), dist/systemd/ and prices/.
+name: kleinia-llmgw
+arch: amd64
+platform: linux
+version: "{{PKG_VERSION}}"
+section: admin
+priority: optional
+maintainer: The Kleinia Authors <release@kleinia.io>
+description: |
+  Kleinia model gateway (llmgw): a single-binary Go gateway speaking three
+  client protocols (OpenAI Chat / OpenAI Responses / Anthropic Messages)
+  over multiple aggregated upstreams, with canonical IR translation,
+  per-key quotas, SQLite usage accounting and priority+weight routing.
+homepage: https://kleinia.io
+license: Apache-2.0
+# GUI 运行时依赖（Fedora 包名；gtk4/libadwaita 自带 typelib）
+depends:
+  - gtk4
+  - libadwaita
+  - python3-gobject
+contents:
+  - src: build-out/llmgwd
+    dst: /usr/bin/llmgwd
+  - src: build-out/llmgwctl
+    dst: /usr/bin/llmgwctl
+  - src: dist/systemd/kleinia-llmgw.service
+    dst: /usr/lib/systemd/system/kleinia-llmgw.service
+  - src: dist/systemd/kleinia-llmgw.socket
+    dst: /usr/lib/systemd/system/kleinia-llmgw.socket
+  - src: prices/prices.json
+    dst: /usr/lib/kleinia/llmgw/prices.json
+  # ---- GUI 管理应用（io.kleinia.ModelGateway） ----
+  - src: dist/kleinia-modelgateway
+    dst: /usr/bin/kleinia-modelgateway
+  - src: gui/src/
+    dst: /usr/lib/kleinia/llmgw/gui/src
+    type: tree
+  - src: gui/data/
+    dst: /usr/lib/kleinia/llmgw/gui/data
+    type: tree
+  - src: gui/io.kleinia.ModelGateway.desktop.in
+    dst: /usr/share/applications/io.kleinia.ModelGateway.desktop
+  - src: gui/io.kleinia.ModelGateway.metainfo.xml
+    dst: /usr/share/metainfo/io.kleinia.ModelGateway.metainfo.xml
+  - src: gui/data/icons/io.kleinia.ModelGateway-symbolic.svg
+    dst: /usr/share/icons/hicolor/symbolic/apps/io.kleinia.ModelGateway-symbolic.svg
+  - src: gui/data/icons/llmgw-gauge-symbolic.svg
+    dst: /usr/share/icons/hicolor/symbolic/apps/llmgw-gauge-symbolic.svg
+  - src: gui/data/icons/llmgw-chart-symbolic.svg
+    dst: /usr/share/icons/hicolor/symbolic/apps/llmgw-chart-symbolic.svg
+  - src: gui/data/io.kleinia.ModelGateway.service
+    dst: /usr/share/dbus-1/services/io.kleinia.ModelGateway.service
+  - src: gui/search-provider/io.kleinia.ModelGateway-search-provider.ini
+    dst: /usr/share/gnome-shell/search-providers/io.kleinia.ModelGateway-search-provider.ini

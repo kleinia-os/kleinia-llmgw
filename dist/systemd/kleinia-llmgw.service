@@ -1,0 +1,36 @@
+[Unit]
+Description=Kleinia model gateway (llmgw)
+Requires=kleinia-llmgw.socket
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+# TODO(G1): switch to Type=notify once llmgwd gains sd_notify support.
+Type=simple
+ExecStart=/usr/bin/llmgwd --addr 127.0.0.1:8484 --db /var/lib/kleinia/llmgw/state.db --prices /usr/lib/kleinia/llmgw/prices.json
+Restart=on-failure
+RestartSec=2
+
+# security baseline (agent-control P0 discipline)
+User=llmgw
+DynamicUser=yes
+NoNewPrivileges=yes
+ProtectSystem=strict
+ReadWritePaths=/var/lib/kleinia/llmgw
+ProtectHome=yes
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+SystemCallFilter=@system-service
+SystemCallArchitectures=native
+CapabilityBoundingSet=
+LockPersonality=yes
+MemoryDenyWriteExecute=yes
+RestrictRealtime=yes
+RestrictSUIDSGID=yes
+
+[Install]
+WantedBy=multi-user.target

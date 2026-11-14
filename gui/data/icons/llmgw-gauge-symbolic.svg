@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  llmgw-gauge-symbolic.svg — 总览页：仪表盘（半圆刻度 + 指针）。
+  单色 #bebebe，16×16，Adwaita symbolic 规范。
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <!-- 半圆刻度盘（顶部开口朝上） -->
+  <path d="M2.5 11.5A5.9 5.9 0 0 1 13.5 11.5" fill="none" stroke="#bebebe"
+        stroke-width="1.7" stroke-linecap="round"/>
+  <!-- 指针（指向右上） -->
+  <path d="M8 11.5L11.2 6.8" fill="none" stroke="#bebebe" stroke-width="1.7"
+        stroke-linecap="round"/>
+  <!-- 中心轴点 -->
+  <circle cx="8" cy="11.5" r="1.1" fill="#bebebe"/>
+</svg>
