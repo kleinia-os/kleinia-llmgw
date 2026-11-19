@@ -43,6 +43,8 @@ contents:
     dst: /usr/share/applications/io.kleinia.ModelGateway.desktop
   - src: gui/io.kleinia.ModelGateway.metainfo.xml
     dst: /usr/share/metainfo/io.kleinia.ModelGateway.metainfo.xml
+  - src: gui/data/icons/io.kleinia.ModelGateway.svg
+    dst: /usr/share/icons/hicolor/scalable/apps/io.kleinia.ModelGateway.svg
   - src: gui/data/icons/io.kleinia.ModelGateway-symbolic.svg
     dst: /usr/share/icons/hicolor/symbolic/apps/io.kleinia.ModelGateway-symbolic.svg
   - src: gui/data/icons/llmgw-gauge-symbolic.svg
